@@ -1,0 +1,25 @@
+int main()//if else
+ {
+	 int age=0;//if(5==num),好排序;
+	 printf("老铁你女朋友多大了？\n");
+	 scanf("%d", &age);
+	 if (age < 13)
+		 printf("小萝莉？拷起来！\n");
+	 else if (age >= 13 && age < 23)
+		 printf("美少女，欸嘿嘿...\n");
+	 else if (age >= 23 && age < 40)
+		 printf("御姐，常来玩啊姐姐~\n");
+	 else if (age >= 40 && age < 90)
+	 {
+		 printf("老姑娘，抱金丹\n");
+		 printf("     ****      \n");
+		 printf("   ********    \n");
+		 printf(" ************ \n");
+		 printf("  **********\n");
+		 printf("    ******  \n");
+	 }
+	 else 
+	 {
+		 printf("好可怕你女朋友0rz\n");
+	 }
+ }
