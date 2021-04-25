@@ -1,0 +1,19 @@
+int main()
+{
+	int a = 1, b, i = 1, max = 0;
+	float sum = 0, average;
+
+	while (a != 0)
+	{
+		b = max;
+		scanf("%d", &a);
+		sum += a;
+
+		if (b >= a)
+			max = b;
+		else max = a;
+		average = sum / i;
+		i++;
+	}
+	printf("average=%f\nmax=%d\n", average, max);
+}
