@@ -1,0 +1,19 @@
+struct Book
+{
+	char name[20];
+	short price;
+
+};
+int main()//构造体
+ {
+	struct Book b1 = { "希灵帝国萌新指南",55 };
+	struct Book* pb = &b1;
+	strcpy(b1.name, "C++");//复制后边，黏贴到前边
+	printf("书名:《%s》\n",(*pb).name);
+	printf("价格:%d\n", pb->price);//不用解引用，更只管简洁
+	
+	printf("卖盘鬼佬改价:");
+	scanf("%d", &b1.price);
+
+	 printf("新价格=%d\n", b1.price);
+ }
