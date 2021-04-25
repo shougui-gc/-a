@@ -1,0 +1,9 @@
+int main()//地狱模式---【指针】
+ {
+	 int a=10;//4个字节-32bit,64bit就是8字节
+	 int* p = &a;//int* 是类型,字符用char*
+	 printf("a地址=%p\n", &a);
+	 printf("a地址=%p\n", p);
+	 //*p = 20;//*---解引用操作符，解析P地址存放的玩意
+	// printf("a=%d\n", a);
+ }
