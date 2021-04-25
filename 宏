@@ -1,0 +1,19 @@
+int Max(int x, int y)
+{
+	int Max;
+	Max = (x > y ? x : y);
+	return Max;
+}
+#define MAX(X,Y) (X>Y?X:Y)
+int main()//测试宏
+ {
+	 int a=10;
+	 int b = 20;
+	 int max = Max(a, b);
+	
+	 printf("max=%d\n",	max);
+
+	 //宏
+	  max = MAX(a, b);
+	 printf("max=%d\n", max);
+ }
