@@ -31,7 +31,7 @@ int main()
 	
 	while (left <= right)
 	{
-		int mid = (right - left) / 2;
+		int mid = (right + left) / 2;
 		if (arr[mid] > k)
 		{
 			right = mid - 1;
