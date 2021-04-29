@@ -1,0 +1,7 @@
+int main()
+{
+	int i;//定义
+	for (i = 0;i <= 10;i++)//定义，判断，执行
+		printf("i=%d\n", i);
+	return 0;
+}
