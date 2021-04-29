@@ -1,0 +1,23 @@
+int main()
+{
+	int key = 0;
+	int ch = 0;
+	char password[20] = { 0 };
+	printf("请输入密码");
+	scanf("s", password);//输入密码存放到password
+	//缓冲区还有回车\n
+	//读取\n继续冲,空格，字母也会捣乱，循环读取
+	while (ch = getchar() != '\n')
+	{
+		;
+	}
+	printf("请确认(Y/N)");
+	key = getchar();//Y/N
+	if (key == 'Y')
+	{
+		printf("搞定\n");
+
+	}
+	else
+		printf("再来\n");
+}
