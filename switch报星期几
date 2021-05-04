@@ -8,7 +8,7 @@ int main()//switch
 	case 2:	
 	case 3:	
 	case 4:	
-	case 5:
+	case 5:                         //无break阻止，这些case会一直往下划，执行完1继续搞2，接着3，4，直到遇到5
 		printf("工作日\n");
 		break;
 	case 6:	
