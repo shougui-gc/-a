@@ -1,0 +1,31 @@
+int main()//3个数从大到小输出,进阶-多个数
+{
+	int i = 0;
+	int j = 0;
+	//int k = 3;
+	//int l= 0;
+	int t = 0;
+	int arr[3] = { 3,7,9 };
+	//printf("想搞几个？\n");
+	//scanf("%d", k);
+	//printf("输入需要排序的数:\n");
+	//for(l=0;l<3;l++)
+	//{
+	//scanf("%d", arr[l]);
+	//}
+	//进阶失败
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	printf("sz=%d\n", sz);
+	for (i = 0;i <sz;i++)
+	{
+		for(j=i+1;j<sz;j++)
+		{
+			if (arr[i] < arr[j])
+				t = arr[i];
+				arr[i] = arr[j];
+				arr[j] = t;
+		}
+		printf("%d\t", arr[i]);
+	}
+
+}
