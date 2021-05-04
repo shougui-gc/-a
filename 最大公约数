@@ -1,0 +1,26 @@
+int main()//最大公约数
+{
+	//辗转相减法
+	//int a = 30;
+	//int b = 90;
+	//while (a != b) 
+	//{
+	//if (a > b)
+	//	a = a - b;
+	//else if(b>a)
+	//	b = b - a;
+
+	//}
+	//printf("最大公约数为:%d",a);
+	//辗转相除法
+	int a = 30;
+	int b = 90;
+	int c = 0;
+	while (a % b)
+	{
+		c = a % b;
+		a = b;
+		b = c;
+	}
+	printf("为:%d", b);
+}
